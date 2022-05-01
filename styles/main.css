@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+header,
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Nav */
+nav {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > div {
+  padding: 0 20px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 0 20px;
+}
+
+/* Skills section */
+.skills {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-container > div {
+  text-align: center;
+  width: 25%;
+  padding: 10px;
+}
+
+i {
+  font-size: 36px;
+}
