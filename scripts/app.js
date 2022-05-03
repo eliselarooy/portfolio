@@ -1,15 +1,7 @@
 const menuBtn = document.querySelector('.menu-btn');
-const navLinks = document.querySelector('.nav-links');
+const navLinks = document.querySelector('.navbar-links');
 
-let menuOpen = false;
 menuBtn.addEventListener('click', () => {
-  if (!menuOpen) {
-    menuBtn.classList.add('open');
-    navLinks.classList.add('active');
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    navLinks.classList.remove('active');
-    menuOpen = false;
-  }
+  menuBtn.classList.toggle('open');
+  navLinks.classList.toggle('active');
 });
