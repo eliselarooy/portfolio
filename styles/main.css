@@ -22,7 +22,7 @@ body {
 
 header,
 main {
-  max-width: 1000px;
+  max-width: 1040px;
   margin: 0 auto;
 }
 
@@ -59,12 +59,30 @@ header {
 
 .navbar-links li a {
   display: block;
+  position: relative;
   text-decoration: none;
   padding: 1rem;
+  overflow: hidden;
+}
+
+.navbar-links ul li a:after {
+  content: '';
+  position: absolute;
+  background: var(--red);
+  height: 1px;
+  width: 0%;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 0;
+  transition: 0.35s ease;
 }
 
 .navbar-links a:hover {
   color: var(--red);
+}
+
+.navbar-links a:hover:after {
+  width: 100%;
 }
 
 /* Burger menu */
@@ -157,7 +175,7 @@ header {
 
   .navbar-links.active {
     display: flex;
-    top: 3rem;
+    top: 1rem;
   }
 }
 
@@ -205,7 +223,7 @@ header h2 {
 }
 
 .project {
-  margin: 20px 0;
+  margin: 40px 0;
   display: flex;
   align-items: center;
   max-width: 1000px;
@@ -326,7 +344,7 @@ section > h2 {
 .links a {
   display: flex;
   align-items: center;
-  margin: 10px;
+  margin: 20px;
   font-size: 20px;
 }
 
