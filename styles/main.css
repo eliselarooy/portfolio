@@ -103,7 +103,7 @@ header {
 
 .burger {
   width: 50px;
-  height: 5px;
+  height: 4px;
   background: var(--main-text);
   border-radius: 4px;
   transition: all 0.5s ease-in-out;
@@ -114,7 +114,7 @@ header {
   content: '';
   position: absolute;
   width: 50px;
-  height: 5px;
+  height: 4px;
   background: var(--main-text);
   border-radius: 4px;
   transition: all 0.5s ease-in-out;
@@ -198,7 +198,6 @@ main {
 
 .skills-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
