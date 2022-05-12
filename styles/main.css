@@ -184,12 +184,59 @@ h1 {
   font-size: clamp(46px, 8vw, 72px);
   margin: 60px 20px 10px 20px;
   color: var(--red);
+  opacity: 0;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 100ms;
 }
 
 header h2 {
   font-size: clamp(26px, 8vw, 44px);
   margin: 0 20px 60px 20px;
   color: var(--pink);
+  opacity: 0;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 200ms;
+}
+
+main {
+  opacity: 0;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 300ms;
+}
+
+.nav-about {
+  opacity: 0;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0ms;
+}
+.nav-projects {
+  opacity: 0;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 100ms;
+}
+.nav-experience {
+  opacity: 0;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 200ms;
+}
+.nav-contact {
+  opacity: 0;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 300ms;
 }
 
 /* Skills section */
@@ -223,7 +270,7 @@ header h2 {
 }
 
 .project {
-  margin: 40px 0;
+  margin: 0 0 80px 0;
   display: flex;
   align-items: center;
   max-width: 1000px;
@@ -358,4 +405,13 @@ section > h2 {
 
 .links a:hover > span {
   color: var(--red);
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
