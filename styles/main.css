@@ -391,7 +391,7 @@ section > h2 {
   color: var(--pink);
 }
 
-.experience-item > p {
+.experience-item > ul {
   margin-top: 20px;
 }
 
