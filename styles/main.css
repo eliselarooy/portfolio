@@ -237,7 +237,6 @@ main {
   padding: 20px;
   background-color: var(--light-navy);
   border-radius: 4px;
-  width: auto;
 }
 
 .project-description h3 {
@@ -274,7 +273,7 @@ main {
 
 .project-links a i {
   padding: 10px;
-  color: var(--main-text);
+  color: var(--blue);
 }
 
 .project-links a i:hover {
@@ -374,6 +373,28 @@ section > h2 {
   opacity: 0;
 }
 
+.experience-content {
+  display: flex;
+}
+
+.experience-item {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.experience-item > * {
+  margin-bottom: 5px;
+}
+
+.experience-item h3 {
+  color: var(--pink);
+}
+
+.experience-item > p {
+  margin-top: 20px;
+}
+
 @media only screen and (max-width: 1099px) {
   .social-links,
   .to-top {
@@ -395,14 +416,6 @@ section > h2 {
 
   .project img {
     width: 100%;
-  }
-
-  .project-description > {
-    position: block;
-    z-index: 2;
-    left: 0;
-    width: 100%;
-    border-radius: 4px;
   }
 }
 
@@ -442,6 +455,10 @@ section > h2 {
   .navbar-links.active {
     display: flex;
     top: 1rem;
+  }
+
+  .experience-content {
+    display: block;
   }
 }
 
