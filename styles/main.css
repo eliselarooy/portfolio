@@ -417,6 +417,10 @@ section > h2 {
   .project img {
     width: 100%;
   }
+
+  .experience-content {
+    display: block;
+  }
 }
 
 @media (max-width: 600px) {
@@ -455,10 +459,6 @@ section > h2 {
   .navbar-links.active {
     display: flex;
     top: 1rem;
-  }
-
-  .experience-content {
-    display: block;
   }
 }
 
