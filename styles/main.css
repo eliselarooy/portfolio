@@ -1,6 +1,7 @@
 :root {
   --navy: #0b3954;
   --main-text: #bfd7ea;
+  --dull-text: #a2aabc;
   --red: #ff6978;
   --pink: #ff8c98;
   --light-navy: #2f3b52;
@@ -259,6 +260,7 @@ main {
 .project-description > p {
   padding: 20px;
   background-color: var(--light-navy);
+  border-radius: 3px;
 }
 
 .project-description h3 {
@@ -281,11 +283,31 @@ main {
 
 .tech-item {
   text-align: center;
-  width: 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0 10px;
 }
 
 .tech-item i {
-  font-size: 20px;
+  font-size: 24px;
+}
+
+.tech-item p {
+  position: absolute;
+  background-color: var(--light-navy);
+  color: var(--dull-text);
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 6px;
+  transition: all 0.25s ease-in-out 0s;
+  opacity: 0;
+}
+
+.tech-item:hover > p {
+  opacity: 1;
 }
 
 .project-links {
