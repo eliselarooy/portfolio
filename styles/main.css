@@ -8,6 +8,16 @@
   --blue: #5cd0e7;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -211,6 +221,7 @@ main {
 
 .subheading {
   color: var(--white);
+  font-weight: 400;
 }
 
 .other {
